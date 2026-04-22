@@ -61,6 +61,17 @@ powershell -ExecutionPolicy Bypass -File .\check_cloud_experiment_status.ps1
 python cloud_gpu_checker_gui.py
 ```
 
+## Build a Windows EXE
+
+If you want to distribute the GUI to users who do not run Python directly, you can package it with PyInstaller:
+
+```bash
+pip install pyinstaller
+pyinstaller --noconfirm --clean --onefile --windowed --name "Cloud GPU Checker" cloud_gpu_checker_gui.py
+```
+
+The generated executable will be placed in the `dist/` directory.
+
 ## Example Config
 
 ```json
