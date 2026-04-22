@@ -1,5 +1,7 @@
 # Cloud GPU Checker
 
+[中文说明](README.zh-CN.md)
+
 Cloud GPU Checker is a small SSH-based utility for people who run experiments on remote GPU servers and want to know what is actually happening.
 
 I originally wrote it for my own paper experiments. `nvidia-smi` can tell me whether the GPU is busy, but it cannot answer the questions I actually care about:
@@ -12,6 +14,36 @@ I originally wrote it for my own paper experiments. `nvidia-smi` can tell me whe
 
 This tool reads remote process info, launcher logs, per-run logs, and result folders together, then turns them into a report that is much closer to the real experiment status.
 
+## Why It Is Useful
+
+Most people watch cloud training with `nvidia-smi`. That tells you whether the GPU is busy, but not whether your experiment is actually progressing in the way you expect.
+
+Cloud GPU Checker tries to answer the questions that matter during a long run:
+
+- what is running now
+- what has already finished
+- whether metrics have already appeared
+- how much time is probably left
+
+In practice, the two most useful signals are:
+
+- current experiment status
+- estimated remaining time
+
+## Screenshots
+
+### GUI Overview
+
+The GUI lets you save multiple server profiles and quickly switch between them.
+
+![GUI overview](assets/screenshots/gui-overview.png)
+
+### Real Status Report
+
+The report is experiment-oriented instead of machine-oriented. It highlights the current model, horizon, finished runs, and rough ETA.
+
+![Status report](assets/screenshots/status-report.png)
+
 ## What It Does
 
 - Connects to a remote Linux server over SSH
@@ -21,6 +53,14 @@ This tool reads remote process info, launcher logs, per-run logs, and result fol
 - Estimates remaining time for the current run and the whole batch
 - Supports both CLI and Windows GUI
 - Supports multiple saved server profiles
+
+## Typical Use Cases
+
+- Long-running baseline batches
+- Multi-horizon forecasting experiments
+- Ablation jobs queued on a single cloud GPU
+- Checking whether a job is still training or just occupying memory
+- Switching across multiple remote servers from one local tool
 
 ## Repository Structure
 
