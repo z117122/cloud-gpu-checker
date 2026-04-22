@@ -62,6 +62,10 @@ The report is experiment-oriented instead of machine-oriented. It highlights the
 - Checking whether a job is still training or just occupying memory
 - Switching across multiple remote servers from one local tool
 
+## Repository
+
+GitHub: <https://github.com/z117122/cloud-gpu-checker>
+
 ## Repository Structure
 
 - `cloud_status_core.py`: shared status collection and report formatting logic

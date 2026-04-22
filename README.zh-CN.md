@@ -60,6 +60,10 @@ GUI 版支持保存多个实例配置，来回切换比较方便。
 - 想判断“是真在训练，还是只是显存挂着”
 - 本地一台机器同时管理多个云实例
 
+## 仓库地址
+
+GitHub：<https://github.com/z117122/cloud-gpu-checker>
+
 ## 仓库结构
 
 - `cloud_status_core.py`: 核心状态采集与结果格式化逻辑

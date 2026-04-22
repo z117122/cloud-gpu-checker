@@ -51,4 +51,4 @@ It goes beyond `nvidia-smi` and tries to answer the questions you actually care 
 
 Repo:
 
-`待补充 GitHub 链接`
+`https://github.com/z117122/cloud-gpu-checker`
