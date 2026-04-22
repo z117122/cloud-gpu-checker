@@ -30,20 +30,6 @@ In practice, the two most useful signals are:
 - current experiment status
 - estimated remaining time
 
-## Screenshots
-
-### GUI Overview
-
-The GUI lets you save multiple server profiles and quickly switch between them.
-
-![GUI overview](assets/screenshots/gui-overview.png)
-
-### Real Status Report
-
-The report is experiment-oriented instead of machine-oriented. It highlights the current model, horizon, finished runs, and rough ETA.
-
-![Status report](assets/screenshots/status-report.png)
-
 ## What It Does
 
 - Connects to a remote Linux server over SSH
