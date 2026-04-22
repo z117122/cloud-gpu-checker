@@ -1,0 +1,16 @@
+{
+  "last_profile": "Example-Server",
+  "profiles": {
+    "Example-Server": {
+      "host": "example.com",
+      "port": "22",
+      "user": "root",
+      "password": "",
+      "key_path": "",
+      "run_root": "/workspace/experiments/project",
+      "launcher_log": "/workspace/experiments/project/launcher.log",
+      "log_root": "/workspace/experiments/project/logs",
+      "plan_script": "/workspace/project/scripts/run_baseline.sh"
+    }
+  }
+}
