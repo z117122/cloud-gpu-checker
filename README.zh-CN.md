@@ -28,6 +28,20 @@
 - 已经完成了多少
 - 这一批还要不要继续等
 
+## 截图
+
+### GUI 界面
+
+GUI 版支持保存多个实例配置，来回切换比较方便。
+
+![GUI 界面](assets/screenshots/gui-overview.png)
+
+### 状态结果
+
+输出结果重点展示当前任务、当前模型、已完成部分和大致剩余时间。
+
+![状态结果](assets/screenshots/status-report.png)
+
 ## 主要功能
 
 - 通过 SSH 连接远程 Linux 服务器
